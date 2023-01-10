@@ -1,0 +1,439 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   html{
+     scroll-behavior: smooth;
+   }
+   
+   body{
+    background-color: white;
+    font-family: "Google Sans", sans-serif;
+   }
+   
+   hr{
+    background-color: rgb(238, 238, 238);
+    height: 1px;
+    border: none;
+    margin-bottom: 30px;
+   }
+   
+   section{
+    padding: 20px 10px;
+    color: rgb(32, 32, 32);
+   }
+   
+   /* Mobile menu styles */
+   
+   .dropdown-butn{
+    display: flex;
+    border: none;
+    font-size: 22px;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+   }
+   
+   .dropdown-content{
+    background-color: white;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    margin: 0;
+    height: 100vh;
+    width: 70vw;
+    flex-direction: column;
+    padding-left: 30px;
+   padding-top: 10px;
+    overflow-x: hidden;
+    z-index: 1;
+   }
+   
+   
+   .dropdown-content a{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    margin: 10px 0;
+    cursor: pointer;
+    color: rgb(63, 63, 62);
+   }
+   
+   .menu-item p{
+    font-size: 16px;
+   }
+   
+   
+   header{
+    padding: 20px 10px;
+    box-shadow: 0px 1px 3px 0px rgb(238, 238, 238); 
+   }
+   
+   .first-header{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: auto;
+    font-size: 22px;
+    color: rgb(95, 95, 95);
+    padding-left: 10px;
+    margin-bottom: 20px;
+   }
+   
+   .second-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    width: 330px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow:  0px 1px 2px 2px rgba(223, 223, 223, 0.8);
+   }
+   
+   .search-area{
+    display: flex;
+   }
+   
+   .search{
+    width: 100px;
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+    outline: none;
+   }
+   
+   .search-icons{
+   width: 80px;
+   display: flex;
+   justify-content: space-between;
+   }
+   
+   .links{
+    width: 330px;
+    max-width: 95%;
+    list-style: none;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .links li a{
+    color: gray;
+    text-decoration: none;
+   }
+   
+   .links li a:hover, .links li a:visited.links li a:active{
+     color: black;
+   border-bottom: 2px solid black;
+   padding-bottom: 8px;
+   }
+   
+   /* Styles for profile area */
+   .profile{
+   padding: 20px;
+   }
+   
+   .name{
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+   }
+   
+   .name h1{
+     font-weight: 400;
+   }
+   
+   .role{
+    color: rgb(73, 73, 73);
+   }
+   
+   .butns{
+    width: 330px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+   }
+   
+   .butns button{
+    display: flex;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+   }
+   
+   #overview{
+    border: 1px solid black;
+   }
+   
+   .title{
+    margin: 10px 0;
+    color: rgb(20, 20, 20);
+    font-weight: 400;
+   }
+   
+   .news a{
+    text-decoration: none;
+    font-size: 0.75rem;
+    color: rgb(20, 20, 20);
+   }
+   
+   .news a h2{
+   margin-bottom: 10px;
+   font-weight: 500;
+   }
+   
+   .images{
+    background-color: #F0F6FF;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 100%;
+   }
+   
+   .frame{
+    width: 335px;
+    margin-right: 6px;
+   }
+   
+   .first-gallery-img{
+    width: 333px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   }
+   .gallery-img{
+     width: 163px;
+    }
+   .sec-container{
+    width: 330px;
+    padding-left: 10px;
+    margin: 10px 0;
+   }
+   
+   .news .frame img{
+    width: 330px;
+   }
+   
+   .sec-container img{
+    width: 120px;
+    margin: 10px 0;
+    display: block;
+   }
+   
+   
+   .news .link-title{
+    color: rgb(202, 6, 6);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 10px 0;
+   }
+   
+   .news .link-subtitle{
+    font-size: 1.2rem;
+    color: #1A0DAB;
+   }
+   
+   .news p{
+    font-size: 0.9rem;
+    margin: 20px 0 10px 0;
+    color: grey;
+   }
+   
+   .before-more-news{
+    margin-bottom: 30px;
+   }
+   
+   .before-more-news button{
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #e4e4e7;
+    position: relative;
+    bottom: -15px;
+    margin-left: 75px;
+    border: none;
+    border-radius: 30px;
+   }
+   
+   .more-news{
+    padding: 10px 0;
+   }
+   .more-news p{
+    margin-top: 7px;
+    margin-bottom: 7px;
+   }
+   
+   .more-news .first-li{
+    color: black;
+   text-decoration: none;
+   font-size: 0.7rem;
+   display: block;
+   margin-bottom: 7px;
+   }
+   
+   .more-news .second-li{
+    font-size: 1rem;
+    color: #1A0DAB;
+    text-decoration: none;
+   }
+   
+   .more-news p{
+   color: #252525;
+   font-size: 0.9rem;
+   }
+   
+   .more-news .third-li{
+    font-size: 0.8rem;
+    color: #1A0DAB;
+    text-decoration: none;
+   }
+   
+   /* Hide side bar in mobile */
+   .side-bar{
+     display: none;
+   }
+   
+   
+   
+   /* @media screen and (min-width: 481px) {
+    .dropdown-butn{
+     display: none;
+    } */
+   
+    .first-header{
+     display: none;
+    }
+    .second-header{
+     width: 700px;
+     max-width: 1200px;
+     margin-left: 150px;
+    }
+    .profile{
+     margin: 0 160px;
+    } 
+    
+    .links{
+     width: 330px;
+     margin: 10px 160px;
+    }
+   /* Settings for desktop flexbox */
+    .main-container{
+     display: flex;
+     flex-wrap: nowrap;
+     margin-left: 160px;
+    }
+   
+    .central-container{
+     display: flex;
+     flex-direction: column;
+     width: 65%;
+    }
+   .container{
+     display: flex;
+   flex-wrap: wrap;
+     width: 100%;
+   }
+   
+   /* style for gallery images section */
+   .images{
+     width: 94%;
+    }
+   
+    .frame{
+     width: 350px;
+     margin-left: 0;
+    }
+   
+    .images .frame{
+     width: 300px;
+    }
+   
+    .first-gallery-img{
+     width: 300px;
+     height: 220px;
+    }
+   
+    .gallery-img{
+     width: 145px;
+     height: 110px;
+    }
+   
+    /* styles for news section */
+    .news .frame img{
+     width: 350px;
+    }
+   
+   .sec-container{
+     min-width: 350px;
+     margin: 10px 5px;
+     border-right: 1px solid rgb(238, 238, 238);
+    }
+   
+   /* Settings for more news section */
+   .before-more-news button{
+     margin-left: 260px;
+     width: 300px;
+    }
+    
+   
+    /* Styles for side-bar/About section */
+    .side-bar{
+     display: block;
+    font-family: sans-serif;
+    line-height: 22.12px;
+     width: 35%;
+     margin-right: 20px;
+     padding-left: 20px;
+     padding-right: 60px;
+     border-left: 1px solid rgb(211, 211, 211);
+   }
+   
+    .side-bar h3{
+     font-weight: 400;
+     font-size: 20px;
+     color: rgb(51, 51, 51);
+     margin-bottom: 20px;
+    }
+    .side-bar p{
+     font-size: 14px;
+     color: rgb(90, 90, 90);
+     margin-top: 10px;
+    }
+   
+    .side-bar p b{
+     color: black;
+    }
+    .side-bar a{
+     text-decoration: none;
+     color: #1A0DAB;
+    }
+   
+    .side-bar-links a{
+    color: rgb(90, 90, 90);
+    }
+   
+    .side-bar-links #feedback{
+    font-size: 12px;
+    }
+    
+    .side-bar-links button{
+   background-color: transparent;
+   padding: 10px 20px;
+   border: 1px solid rgb(211, 211, 211);
+   border-radius: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 30px;
+    }
+   
